@@ -1,0 +1,40 @@
+{
+  "project_id": "sisense_targets_us",
+  "description": "USA B2B companies with $50M+ revenue, <1000 employees, detecting Sisense/Looker/GoodData usage",
+
+  "filters": {
+    "hq_country": ["US"],
+    "industry_type": "B2B",
+    "employee_count_min": 1,
+    "employee_count_max": 999,
+    "revenue_usd_min": 50000000,
+    "revenue_usd_max": null,
+    "min_customer_count": null,
+    "industry_tags": []
+  },
+
+  "tech_detection": {
+    "enabled": true,
+    "target_tools": ["Sisense", "Looker", "GoodData"],
+    "detect_common_analytics": true
+  },
+
+  "sources": {
+    "primary": "csv",
+    "fallback": null,
+    "max_results": 500,
+    "csv_input": "inputs/companies.csv"
+  },
+
+  "output": {
+    "google_sheets": {
+      "enabled": true,
+      "spreadsheet_name": "Clay-Lite: Sisense Targets",
+      "worksheet_name": null,
+      "credentials_file": "~/.config/gspread/credentials.json",
+      "share_with_emails": []
+    },
+    "csv_enabled": true,
+    "csv_filename": null
+  }
+}

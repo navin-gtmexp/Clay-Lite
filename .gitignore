@@ -1,0 +1,34 @@
+# Environment
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Google OAuth token (contains your personal access token — never commit)
+authorized_user.json
+credentials.json
+
+# Research outputs (contain company data — keep local, don't commit)
+outputs/*.csv
+inputs/companies.csv
+
+# OS
+.DS_Store
+Thumbs.db

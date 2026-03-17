@@ -1,0 +1,4 @@
+name,domain,hq_country,hq_state,hq_city,employee_count,revenue_usd,industry,customer_count,linkedin_url
+Acme Analytics,acme-analytics.com,US,CA,San Francisco,350,75000000,SaaS,1200,https://linkedin.com/company/acme-analytics
+DataFlow Corp,dataflow.io,US,NY,New York,600,120000000,Data & Analytics,800,https://linkedin.com/company/dataflow
+Insight Platform Inc,insightplatform.com,US,TX,Austin,200,55000000,Business Intelligence,500,
